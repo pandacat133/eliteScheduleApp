@@ -19,11 +19,8 @@
 
 <ion-content padding>
   <ion-list>
-    <button ion-item (click)="goToTeam()">
-      March Madness Tournament
-    </button>
-    <button ion-item (click)="goToTeam()">
-      Summer Showdown
+    <button *ngFor="let tournament of tournaments" ion-item (click)="goToTeam(tournament)">
+      {{tournament.name}}
     </button>
   </ion-list>
 </ion-content>
