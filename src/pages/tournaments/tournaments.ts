@@ -26,5 +26,4 @@ export class TournamentsPage {
   goToTeam() {
     this.navCtrl.push(TeamsPage);
   }
-
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {GamePage} from "../game/game";
 
 /**
  * Generated class for the StandingsPage page.
@@ -22,4 +23,7 @@ export class StandingsPage {
     console.log('ionViewDidLoad StandingsPage');
   }
 
+  goToGame() {
+    this.navCtrl.push(GamePage);
+  }
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { GamePage } from "../game/game";
 
 /**
  * Generated class for the TeamDetailPage page.
@@ -24,5 +25,9 @@ export class TeamDetailPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TeamDetailPage');
+  }
+
+  goToGame() {
+    this.navCtrl.push(GamePage);
   }
 }
